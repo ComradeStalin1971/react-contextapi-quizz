@@ -1,5 +1,6 @@
 {
-    "questions": 
+    "questions": [
+        {
         "question": "Which is the most popular JavaScript framework?",
         "options": ["Angular", "React", "Svelte", "Vue"],
         "correctOption": 1,
