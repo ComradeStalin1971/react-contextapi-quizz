@@ -90,7 +90,7 @@ const QuizContext = ({children}) => {
             .then((data) => dispatch({ type: "DataReceived", payload: data }))
             .catch((err) => dispatch({ type: "DataFailed" }));
     }, [])
-    return <QuizContextConst.Provider values={{questions, restart, status, index, answer, points, highscore, remainingSeconds, dispatch, numQuestions, maxPoints, time_per_question}}>
+    return <QuizContextConst.Provider value={{questions, restart, status, index, answer, points, highscore, remainingSeconds, dispatch, numQuestions, maxPoints, time_per_question}}>
         {children}
     </QuizContextConst.Provider>
 }
