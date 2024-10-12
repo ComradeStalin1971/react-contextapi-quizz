@@ -42,7 +42,7 @@ function reducer(state, action) {
             }
         case "NextQuestion":
             return {
-                ...state,
+                state,
                 answer: null,
                 index: state.index + 1
             }
